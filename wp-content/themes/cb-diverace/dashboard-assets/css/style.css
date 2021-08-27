@@ -1,0 +1,984 @@
+
+/*=========== Font style ======================
+================================================*/
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../fonts/avenir-next-regular-webfont.woff") format("woff"),
+    url("../fonts/avenir-next-regular-webfont.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../fonts/avenir-next-medium-webfont.woff") format("woff"),
+    url("../fonts/avenir-next-medium-webfont.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../fonts/avenir-next-demi-webfont.woff") format("woff"),
+    url("../fonts/avenir-next-demi-webfont.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../fonts/avenir-next-bold-webfont.woff") format("woff"),
+    url("../fonts/avenir-next-bold-webfont.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('../fonts/avenir-next-heavy-webfont.woff') format('woff'),
+  url('../fonts/avenir-next-heavy-webfont.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+/*=========== Custome CSS ======================
+================================================*/
+body {
+  margin: 0;
+  font-family: 'Avenir Next';
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #ffffff;
+}
+.os-content{padding: 0 !important; background: #000;}
+
+.notification{
+	font-size: 24px;
+}
+.notification i{
+	color: #000;
+}
+.card{
+  height: 100%;
+}
+.main-header, [class*='sidebar-dark'] .brand-link{
+  min-height: 110px;
+}
+.logo{
+  margin-left: 20px;
+}
+.sidebar-mini.layout-fixed.sidebar-collapse .logo{
+  width: 65px;
+  padding:5px 3px;
+  margin-left: 0;
+}
+
+/* 1. Dashboard */
+
+.upcoming_trip .trip_card{
+  border-bottom: 1px solid #BCBCBC;
+  width: 100%;
+  float: left;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+.upcoming_trip h3{
+	font-size: 26px;
+	color: #333333;
+	font-family: 'Avenir Next';
+	font-weight: 500;
+	padding-bottom: 20px;
+}
+
+.upcoming_trip ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  float: left;
+}
+.upcoming_trip ul li.trip_li{
+  float: left;
+  display: inline-block;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  width: 20%;
+}
+.upcoming_trip ul li.trip_li img{
+  width: 70px;
+}
+.upcoming_trip ul li.trip_li ul{
+  padding-top: 20px;
+}
+.upcoming_trip ul li.trip_li ul li{
+  display: block;
+  color: #686868;
+  font-size: 18px;
+  font-weight: 500;
+}
+.upcoming_trip ul li.trip_li ul li h5{
+   color: #3396D8;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.upcoming_trip ul li.trip_li ul li p{
+   color: #292E30;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.upcoming_trip ul li.trip_li ul li span.custom-comma{
+  text-transform: capitalize;
+}
+.upcoming_trip ul li.trip_li ul li.custom-cabin-title{
+  padding-bottom: 15px;
+}
+.upcoming_trip ul li.trip_li ul li.custom-cabin-title:last-child{
+  padding-bottom: 0px;
+}
+.upcoming_trip ul li.trip_li ul li span.custom-comma:not(:empty):not(:last-child):after{
+  content: ", ";
+}
+
+.upcoming_trip a{
+	color: #000000;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: capitalize;
+	text-decoration: underline;
+	float: right;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.upcoming_trip a img{
+  margin-left: 10px;
+  margin-top: -3px;
+  width: 11px;
+}
+
+/********/
+
+.card-slider {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.card-slider .slick-prev-icon,
+.card-slider .slick-next-icon {
+  color: black;
+}
+.card-slider .slick-slide {
+  padding: 0 10px;
+}
+.card-slider .card {
+  position: relative;
+  display: flex !important;
+  flex-direction: column;
+  height: 100%;
+  background-color: white;
+  text-decoration: none;
+  transition: all 0.1s linear;
+  box-shadow: none;
+}
+
+
+
+.add_on_cover.card .product_image {
+  order: -1;
+  position: relative;
+  height: 340px;
+  padding: 2px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add_on_cover.card .product-link, .add_on_cover.card .product-link:hover, .add_on_cover.card .product-link:focus{
+  outline: none
+}
+.add_on_cover.card .product_image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.add_on_cover .card .product-link .product_detail{
+  padding: 50px 50px 10px;
+}
+.add_on_cover .card .product-link h3{
+  font-size: 26px;
+  color: #333333;
+  font-family: 'Avenir Next';
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+.add_on_cover .card .product-link p{
+  color: #333333;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 35px;
+  padding: 0;
+  margin: 0;
+}
+.add_cart_btn{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  background: #000;
+  padding: 10px 15px;
+  margin: 20px 50px;
+  display: inline-block;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+.add_cart_btn:hover{color: #fff;outline: none}
+
+/* 2. Add-Ons */
+
+.adons_cover{
+  width: 100%;
+  float: left;
+}
+.adons_cover .adons_card h3{
+  font-size: 26px;
+  color: #333333;
+  font-family: 'Avenir Next';
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+.adons_cover .adons_card{
+  width: 100%;
+  float: left;
+  margin-bottom: 40px;
+}
+.adons_cover .adons_card .cart_img{
+  width: 27px;
+  float: left;
+  margin-right: 15px;
+}
+.adons_cover .adons_card .course_detail {
+  display: table;
+}
+.adons_cover .adons_card .course_detail p{
+ color: #001121;
+ font-size: 18px;
+ font-weight: 500;
+ padding: 0;
+ margin: 0;
+}
+.adons_cover .adons_card .course_detail span{
+ color:#3396D8;
+ font-size: 18px;
+ font-weight: 500;
+ display: block;
+ padding: 0;
+ margin: 0;
+}
+.adons_cover .adons_card .course_detail .add_cart_btn{
+  margin:20px 0;
+}
+.adons_cover .adons_card .rental_img{
+  width: 27px;
+  float: left;
+  margin-right: 15px;
+}
+
+
+
+/* 3. History */
+
+.history .history_card{
+  border-bottom: 1px solid #BCBCBC;
+  width: 100%;
+  float: left;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+.history .history_card h3{
+  font-size: 26px;
+  color: #333333;
+  font-family: 'Avenir Next';
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.history ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  float: left;
+}
+.history ul li.history_li{
+  float: left;
+  display: inline-block;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  width: 20%;
+}
+.history ul li.history_li img{
+  width: 36px;
+}
+.history ul li.history_li ul{
+  padding-top: 20px;
+}
+.history ul li.history_li ul li{
+  display: block;
+  color: #686868;
+  font-size: 18px;
+  font-weight: 500;
+}
+.history ul li.history_li ul li h5{
+   color: #3396D8;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.history ul li.history_li ul li p{
+   color: #292E30;
+  font-size: 16px;
+  font-weight: 600;
+}
+.history ul li.history_li ul li span.custom-comma{
+  text-transform: capitalize;
+}
+.history ul li.history_li ul li.custom-cabin-title{
+  padding-bottom: 15px;
+}
+.history ul li.history_li ul li.custom-cabin-title:last-child{
+  padding-bottom: 0px;
+}
+.history ul li.history_li ul li span.custom-comma:not(:empty):not(:last-child):after{
+  content: ", ";
+}
+ 
+
+.history a{
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-decoration: underline;
+  float: right;
+  margin-top: 40px;
+}
+.history a img{
+  margin-left: 10px;
+  margin-top: -3px;
+  width: 11px;
+}
+
+
+
+/* 4. Share */
+
+
+.share_cover{
+  width: 100%;
+  float: left;
+}
+.share_cover .share_card{
+  width: 100%;
+  float: left;
+  margin-bottom: 40px;
+}
+.howitwork_cover{
+  width: 100%;
+  float: left;
+}
+.howitwork_cover h3{
+  font-size: 26px;
+  color: #333333;
+  font-family: 'Avenir Next';
+  font-weight: 500;
+  padding-bottom: 20px;
+  margin: 0;
+}
+.howitwork_cover p{
+  font-size: 18px;
+  color: #686868;
+  font-weight: 500;
+  padding-bottom: 20px;
+  margin: 0;
+}
+.howitwork_cover .howitwork_bg{
+  background: #EFEFEF;
+  padding: 30px;
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+.howitwork_bg .field_wrap{
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+}
+.howitwork_bg .field_wrap label{
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  width: 30%;
+}
+.howitwork_bg .field_wrap input{
+  font-size: 16px;
+  color: #686868;
+  font-weight: 500;
+  padding: 20px;
+  background: #FFFFFF;
+  width: 526px;
+  border: none;
+  margin-left: 20px;
+}
+.copy_link_btn{
+  color: #9E9E9E;
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid #9E9E9E;
+  padding: 15px 0;
+  float: left;
+  margin-top: 40px;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+  max-width: 100%;
+  margin-left: 40px
+}
+.copy_link_btn:hover{
+  color: #9E9E9E;
+}
+.update_code_btn{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  float: right;
+  padding: 15px 0;
+  margin-top: 40px;
+  border-radius: 5px;
+  background: #000000;
+  width: 200px;
+  text-align: center;
+  max-width: 100%;
+  margin-right: 40px
+}
+.update_code_btn:hover{color: #fff;}
+
+
+.share_via_cover{
+  width: 100%;
+  float: left;
+}
+.share_via_cover h3{
+  font-size: 26px;
+  color: #333333;
+  font-family: 'Avenir Next';
+  font-weight: 500;
+  padding-bottom: 20px;
+  margin: 0;
+}
+.share_via_cover .share_via_bg{
+  background: #333333;
+  width: 100%;
+  display: block;
+  padding: 30px 0;
+  margin-bottom: 20px;
+}
+
+
+.coupon_code_cover{
+  width: 100%;
+  float: left;
+}
+.coupon_code_cover h3{
+  font-size: 26px;
+  color: #333333;
+  font-family: 'Avenir Next';
+  font-weight: 500;
+  padding-bottom: 20px;
+  margin: 0;
+}
+.coupon_code_cover p{
+  font-size: 18px;
+  color: #686868;
+  font-weight: 500;
+  padding-bottom: 20px;
+  margin: 0;
+}
+.coupon_code_cover .coupon_code_bg{
+  background: #333333;
+  width: 100%;
+  display: block;
+  padding: 15px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.coupon_code_bg .coupon_code, .coupon_code_bg .coupon_valid_msg{color: #FFF;}
+
+
+/* 5. Billing */
+
+
+.billing_cover{
+  width: 100%;
+  float: left;
+}
+.billing_cover .billing_card{
+  width: 100%;
+  float: left;
+  margin-bottom: 40px;
+}
+.save_payment_cover{
+  width: 100%;
+  float: left;
+}
+.save_payment_cover h3{
+  font-size: 26px;
+  color: #333333;
+  font-family: 'Avenir Next';
+  font-weight: 500;
+  padding-bottom: 20px;
+  margin: 0;
+}
+.save_payment_cover .payment_bg ul{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  float: left;
+}
+.save_payment_cover .payment_bg ul li.head_li{
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #001121;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 100%;
+}
+.save_payment_cover .payment_bg ul li.sub_li{
+  width: 100%;
+  display: inline-block;
+  background: #EFEFEF;
+  padding: 18px 20px;
+  color: #494949;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  z-index: 0;
+}
+.save_payment_cover .payment_bg ul li.sub_li.record_data span{
+  position: relative;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+}
+.save_payment_cover .payment_bg ul li span{
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: -1;
+}
+.save_payment_cover .payment_bg ul li .delete_card_btn{
+  float: right;
+  color: #000000;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+}
+.save_payment_cover .payment_bg ul li .delete_card_btn:hover{
+  color: #000000;
+  text-decoration: underline;
+}
+
+.new_card_cover{
+  width: 100%;
+  float: left;
+}
+.new_card_cover h3{
+  font-size: 26px;
+  color: #333333;
+  font-family: 'Avenir Next';
+  font-weight: 500;
+  padding-bottom: 20px;
+  margin: 0;
+}
+.new_card_cover .add_card_bg{
+  background: #EFEFEF;
+  padding: 30px;
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+.add_card_bg .field_wrap{
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+}
+.add_card_bg .field_wrap label{
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  min-width: 120px;
+}
+.add_card_bg .field_wrap input{
+  font-size: 16px;
+  color: #686868;
+  font-weight: 500;
+  padding: 20px;
+  background: #FFFFFF;
+  border: none;
+  margin-left: 20px;
+  width: 100%;
+}
+.save_detail_btn{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  float: right;
+  padding: 15px 0;
+  margin-top: 40px;
+  border-radius: 5px;
+  background: #3396d8;
+  width: 200px;
+  text-align: center;
+  max-width: 100%;
+  margin-right: 40px;
+  border: 0;
+  transition: all .5s;
+}
+.save_detail_btn:hover{color: #fff;}
+
+
+
+
+/* 6. Account */
+
+
+.account_cover{
+  width: 100%;
+  float: left;
+}
+.account_cover .account_card{
+  width: 100%;
+  float: left;
+  margin-bottom: 40px;
+}
+.account_detail_cover{
+  width: 100%;
+  float: left;
+}
+.account_detail_cover h3{
+  font-size: 26px;
+  color: #333333;
+  font-family: 'Avenir Next';
+  font-weight: 500;
+  padding-bottom: 20px;
+  margin: 0;
+}
+.account_detail_cover .field_wrap{
+  display: block;
+  width: 100%;
+}
+.account_detail_cover .field_wrap label{
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+}
+.account_detail_cover .field_wrap input{
+  font-size: 16px;
+  color: #686868;
+  font-weight: 500;
+  padding: 20px;
+  background: #FFFFFF;
+  border: 1px solid #9E9E9E;
+  width: 100%;
+}
+.account_detail_cover .field_wrap textarea{
+  font-size: 16px;
+  color: #686868;
+  font-weight: 500;
+  padding: 20px;
+  background: #FFFFFF;
+  border: 1px solid #9E9E9E;
+  width: 100%; 
+} 
+
+.account_detail_cover .save_detail_btn{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  float: left;
+  padding: 15px 0;
+  margin-top: 20px;
+  border-radius: 5px;
+  background: #000000;
+  width: 200px;
+  text-align: center;
+  max-width: 100%;
+}
+.save_detail_btn:hover{color: #fff;background: #333;}
+
+.field_is_required{color:#ff0000;}
+.hiw_input.error, .hiw_input.error:focus{border: 1px solid #ff0000 !important;}
+label.error{padding-top:5px; color: #ff0000 !important;}
+
+.radio-btn-wrapper .radio_btn_selection_section{font-size: 16px; color: #686868; font-weight: 500; padding: 20px; height: auto; }
+.radio-btn-wrapper .radio_btn_selection_section label:last-child{padding-left: 15px;}
+.radio-btn-wrapper .radio_btn_selection_section label .gender_label{padding-left: 5px;}
+.radio-btn-wrapper .radio_btn_selection_section input{ width: auto !important; }
+.radio-btn-wrapper .radio_btn_selection_section input[type='radio']:after {width: 15px; height: 15px; border-radius: 15px; top: -3px; left: -1px; position: relative; background-color: #d1d3d1; content: ''; display: inline-block; visibility: visible; border: 2px solid white; }
+.radio-btn-wrapper .radio_btn_selection_section input[type='radio']:checked:after {width: 15px; height: 15px; border-radius: 15px; top: -3px; left: -1px; position: relative; background-color: #000000; content: ''; display: inline-block; visibility: visible; border: 2px solid white; }
+
+
+.notification{margin-bottom: 15px; }
+.notification.success{color: #27ae60;}
+.notification.success {background-color: #dbf1d6; border: 1px solid #27ae60; }
+.notification.error {background: transparent!important; border-color: #ff9b89 !important; border: 1px solid #eb5439; }
+.success .noti-icon {background-color: #27ae60; }
+.success .noti-icon:before {content: "\f00c"; }
+.notification .noti-icon:before {font-family: 'Font Awesome\ 5 Free'; width: 32px; height: 32px; color: #fff; }
+.notification .noti-icon {border-radius: 0; float: left; height: 51px; line-height: 51px; margin-right: 30px; position: relative; text-align: center; width: 52px; }
+.notification.success p {color: #27ae60; float: left; line-height: 50px; margin: 0; }
+.notification.error p{color: #d54040; float: left; line-height: 50px; margin: 0; }
+.notification.error .noti-icon:before {content: "\f00d"; }
+.notification .noti-icon:before {font-family: 'Font Awesome\ 5 Free'; width: 32px; height: 32px; color: #fff; }
+.error .noti-icon {background: #d54040; }
+
+
+/* gravity style */
+.gform_wrapper #gform_3 textarea{height: 130px; width: 100%;}
+.gform_wrapper ul.gform_fields {padding-left: 0;list-style:none;}
+.gform_wrapper ul.gform_fields li.gfield{margin-bottom: 1.5rem !important;}
+.gform_wrapper .gform_footer .gform_button {color: #fff; background: #000;font-size: 18px; font-weight: 500; float: left; padding: 15px 0; margin-top: 20px; border-radius: 5px; width: 200px; text-align: center; max-width: 100%;}
+.gform_wrapper .gform_footer .gform_button:focus, .gform_wrapper .gform_footer .gform_button:hover {color: #fff; background: #333; }
+.gform_wrapper .validation_error{padding-left: 15px;background: transparent!important; border-color: #ff9b89 !important; border: 1px solid #eb5439; color: #d54040; float: left; line-height: 50px; margin: 0; width: 100%;margin-bottom: 15px;}
+.gform_wrapper .validation_message{color: #d54040;}
+.gform_wrapper .gform_confirmation_message{color: #27ae60; float: left; line-height: 50px; margin: 0; background-color: #dbf1d6; border: 1px solid #27ae60; width: 100%; font-size: 24px; padding-left: 15px; }
+.gform_confirmation_wrapper .gform_confirmation_message{font-family: inherit; margin-top: 0; color: #27ae60 !important; text-align: center; width: 100%; font-size: 21px !important; font-weight: 700; position: absolute; top: 40%; transform: translate(-20px , 0px);}
+
+
+.user-menu-wrapper .dropdown-menu .dropdown-item i{padding-right: 15px;}
+
+.modal-body p {font-size: 18px; }
+.modal-dialog .modal-header{padding: 15px 30px; background: #000;}
+.modal-dialog .modal-header .modal-title{font-weight: 600;width: 100%;text-align: center; color: #ffffff;font-size: 24px;}
+.modal-dialog .modal-header button{position: relative; }
+.modal-dialog .modal-header button .md-close{position: absolute; top: -15px; margin: 0; padding: 0; left: 30px; text-decoration: none; }
+.modal-dialog .modal-header button{opacity: 1 !important; outline: none; }
+.modal-dialog .modal-header button .md-close:hover > i.fa-times::before{color: #000 !important; }
+.modal-dialog .modal-header button .md-close i.fa-times {width: 30px; height: 30px; opacity: 1; color: #636363 !important; background-color: #FFF !important; border-radius: 50px; display: flex; justify-content: center; align-items: center; }
+
+.modal-dialog .modal-body .total_amount, .modal-dialog .modal-body .order_status {color: #3396D8; font-weight: 600;}
+.modal-dialog .modal-body .all_trip_cabin .single_person .person-name{display: block;}
+.modal-dialog .all_trip_cabin .single_cabin_detail{padding-bottom: 15px;float: left;width: 100%;}
+.modal-dialog .single_cabin_detail {margin-bottom: 5px;}
+.modal-dialog .single_cabin_detail .single_person_wise_title{background-color: #3396d8; color: #FFF; padding-left: 15px; padding: 5px 15px; margin-bottom: 5px; border-radius: 18px; width: 100%; max-width: 130px; text-align: center; }
+.modal-dialog .single_person_wise_wrapper{float: left;width: 100%;margin-top: 10px;margin-bottom: 15px; }
+
+.profile-progress-wrapper{color:#54a2d7; font-weight:700; text-align: center; }
+.main-profile-percentage{text-align: center; }
+.profile-progress-bar{width:50%;margin:10px auto;background-color: #DDD;height:15px;border-radius: 30px;}
+
+.course_link{background-color: #3396d8;}
+.course_link:hover{background-color: #4f5960;}
+.display_user_referral_code{float: left; display: block; width: 100%;}
+
+
+/*** 21-07-21 **/
+
+.person_order_detail_modal .modal-body .card{
+  box-shadow: none
+}
+.person_order_detail_modal .modal-body .tab-card-header{
+ border: 0;
+ padding: 0 0 0.75rem;
+}
+
+.person_order_detail_modal .modal-body .tab-card-header .nav-tabs{border-bottom: 1px solid #ddd;}
+.person_order_detail_modal .modal-body .tab-card-header .nav-tabs .nav-item .nav-link{
+  margin-top: 0;
+  text-decoration: none;
+ /*  border: 1px solid #3396D8; */
+  color: #3396D8;
+  border-radius: 0;
+  transition: all .5s;
+}
+
+.person_order_detail_modal .modal-body .tab-card-header .nav-tabs .nav-item .nav-link.active, .person_order_detail_modal .modal-body .tab-card-header .nav-tabs .nav-item .nav-link:hover{
+  color: #fff;
+  background-color: #3396D8;
+  border: 1px solid #fff;
+  border-bottom-color: transparent;
+}
+.person_order_detail_modal .modal-body input.form-control{
+  height: calc(2.25rem + 9px);
+}
+
+.person_order_detail_modal .modal-body .tab-content .tab-pane{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.person_order_detail_modal .modal-body .tab-content h4.card-title{
+  font-size: 24px;
+  font-weight: 600;
+}
+.person_order_detail_modal .modal-body .tab-content a.medical_file_number_0 img{
+  margin-left: 0
+}
+
+.person_order_detail_modal .medicalstatementform input[type="radio"], .person_order_detail_modal .medicalstatementform label{
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.person_order_detail_modal .medicalstatementform input[type="radio"]:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: 3px;
+    left: -1px;
+    position: relative;
+    background-color: #000000;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.person_order_detail_modal .medicalstatementform input[type="radio"]:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: 3px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+.tbl_account_progress {border: 0;width: 50%; max-width: 100%;margin: 0 auto;}
+.tbl_account_progress tr td.td_head{color:#54a2d7; font-family:'Montserrat', sans-serif; font-size:13px; line-height:22px; text-align:left; padding:0 10px;}
+.tbl_account_progress tr td.td_content{color:#5d5c5c; font-family:'Montserrat', sans-serif; font-size:13px; line-height:22px; text-align:right; padding:0 10px}
+
+/*  ================ Media Query ================ */
+
+@media (max-width: 1360px){
+  .add_card_bg .field_wrap label{min-width: 80px;}
+}
+@media (max-width: 1199px){
+  .add_on_cover{
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .card-slider {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .upcoming_trip ul li.trip_li{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .upcoming_trip ul li.trip_li p{
+    margin: 0;
+    float: left;
+    display: inline-block;
+  }
+  .upcoming_trip ul li.trip_li ul {
+    padding-top: 0;
+    width: auto;
+    float: right;
+  }
+  .upcoming_trip ul li.trip_li ul li{text-align: right;}
+
+  .history ul li.history_li{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .history ul li.history_li p{
+    margin: 0;
+    float: left;
+    display: inline-block;
+  }
+  .history ul li.history_li ul {
+    padding-top: 0;
+    width: auto;
+    float: right;
+  }
+  .history ul li.history_li ul li{text-align: right;}
+
+  .howitwork_bg .field_wrap{display: block;}
+  .howitwork_bg .field_wrap label{width: 100%;}
+  .howitwork_bg .field_wrap input{margin: 0;width: 100%;}
+}
+@media screen and (max-width: 600px) {
+  .content-wrapper > .content{padding: 20px;}
+  .card-slider .card {
+    height: auto;
+  }
+  .add_on_cover .card .product-link .product_detail{
+    padding: 30px 20px 10px;
+  }
+  .add_cart_btn{margin: 20px 20px;}
+}
+
+@media screen and (max-width: 575px){
+  .add_card_bg .field_wrap label.text-center{text-align: left !important;}
+  .copy_link_btn, .update_code_btn{margin-left: 0;margin-right: 0; display: block; float: none;}
+  .copy_link_btn{display: inline-block;}
+  .update_code_btn{margin-top: 20px;}
+}
+
+@media screen and (max-width: 480px){
+  .add_on_cover.card .product_image{height: auto}
+  .add_card_bg .field_wrap{
+    display: block;
+  }
+  .add_card_bg .field_wrap input{margin: 0; min-width: auto;width: 100%;}
+
+  .save_payment_cover .payment_bg ul li.head_li{padding-left: 0; font-size: 16px;}
+  .save_payment_cover .payment_bg ul li span{position: relative;float: right;}
+  .save_payment_cover .payment_bg ul li .delete_card_btn{float: none; display: block;padding-top: 20px}
+  .save_detail_btn{margin-right: 0;text-align: center;}
+}
+
+@media screen and (max-width: 375px) {
+  .upcoming_trip ul li.trip_li p{
+    float: none;
+    display:block;
+  }
+  .upcoming_trip ul li.trip_li ul {
+    float: none;
+  }
+  .upcoming_trip ul li.trip_li ul li{text-align: left;}
+
+  
+  .history ul li.history_li p{
+    float: none;
+    display:block;
+  }
+  .history ul li.history_li ul {
+    float: none;
+  }
+  .history ul li.history_li ul li{text-align: left;}
+}
+
+.pass_doc_pdf{
+
+  float: none;
+}
+.pass_doc_pdf img{
+
+  width: 40px !important;
+
+}

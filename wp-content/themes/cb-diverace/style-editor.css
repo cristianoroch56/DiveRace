@@ -1,0 +1,153 @@
+/*
+	Theme Name: DiveRACE
+	Theme URI: https://diverace.com
+	Version: 1.0.0
+	Description: DiveRACE WordPress Theme based on ACF, Beaver Builder and Beaver Themer
+	Author: ChillyBin Web Design
+	Author URI: https://chillybin.com.sg
+	template: bb-theme
+*/
+
+/*
+* === FONTS ===
+*/
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('fonts/avenir-next-regular-webfont.woff') format('woff');
+       url('fonts/avenir-next-regular-webfont.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('fonts/avenir-next-medium-webfont.woff') format('woff');
+       url('fonts/avenir-next-medium-webfont.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('fonts/avenir-next-demi-webfont.woff') format('woff');
+       url('fonts/avenir-next-demi-webfont.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('fonts/avenir-next-bold-webfont.woff') format('woff');
+       url('fonts/avenir-next-bold-webfont.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*
+* === GENERAL ===
+*/
+
+/* Main column width */
+.wp-block {
+    max-width: 760px;
+}
+ 
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+    max-width: 920px;
+}
+ 
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+    max-width: 1080px;
+}
+
+/* Custom Editor Styles */
+
+/* 
+ * With some edits, this can be used as a base for your Custom Editor Styles.
+ * Note that this is for demonstration purposes only, and some elements may not 
+ * be covered here.
+ */
+
+/* Fonts */
+/* Note that Montserrat is enqueued in the PHP function that enqueues this file */
+
+.editor-writing-flow .wp-block textarea,
+.editor-writing-flow .wp-block .wp-block-freeform,
+.editor-rich-text p,
+.editor-post-title__input,
+.wp-block-quote__citation {
+    font-family: 'Avenir Next', Arial, Helvetica, sans-serif;
+}
+
+.editor-post-title__block .editor-post-title__input,
+.edit-post-visual-editor, .edit-post-visual-editor p {
+    font-family: "Avenir Next", sans-serif;
+}
+
+/* TinyMCE Editor */
+.editor-styles-wrapper p,
+.editor-rich-text p,
+.editor-styles-wrapper blockquote {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 1.5em;
+}
+
+.editor-writing-flow .wp-block a {
+    color: #3396D8 !important;
+}
+
+/* Headings */
+.editor-writing-flow .wp-block h1,
+.editor-writing-flow .wp-block h3,
+.editor-writing-flow .wp-block h3{
+    font-weight: bold;
+}
+
+.editor-writing-flow .wp-block h1 {
+
+}
+
+.editor-writing-flow .wp-block h2 {
+
+}
+
+.editor-writing-flow .wp-block h3 {
+
+}
+
+/* The Post Title */
+.editor-post-title__block .editor-post-title__input {
+    color: #001121;
+    text-align: center;
+}
+
+/* Blockquote styles */
+.wp-block blockquote {
+    font-style: italic;
+    color: #aaa;
+    margin-left: 20px;
+    border-left: 0;
+    padding-left: 0;
+}
+
+.wp-block blockquote .editor-rich-text {
+    padding-left: 3rem;
+}
+
+.wp-block blockquote:before {
+    color: #ccc;
+    content: '\201C' !important;
+    font-size: 4em;
+    position: absolute;
+    top: 10px;
+}
+
+.wp-block-quote:not(.is-large):not(.is-style-large) {
+    border-left: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
