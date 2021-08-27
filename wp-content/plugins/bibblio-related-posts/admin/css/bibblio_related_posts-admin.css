@@ -1,0 +1,665 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+.container.bibblio_container {
+  max-width: 980px;
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.bibblio_container {
+  font-family: "Open Sans";
+}
+.bibblio_container * {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.bibblio_container .successMessage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  text-align: center;
+  padding: 40px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.bibblio_container #tab4 {
+  position: relative;
+}
+.bibblio_container .error_div {
+  color: #ef5350;
+}
+.bibblio_container .buttonLogout {
+  padding: 14px 20px;
+  color: #fff;
+  background-color: #f7941e;
+  border: 0px;
+  float: right;
+  font-size: 20px;
+  transition: 0.5s all;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin: 1px;
+  margin-left: 20px;
+}
+.bibblio_container .buttonLogout:hover {
+  background-color: rgba(247,148,30,0.5);
+  color: #fff;
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .bibblio_container .buttonLogout {
+	margin-bottom: 20px;
+  }
+}
+.bibblio_container .clear {
+  clear: both;
+  overflow: hidden;
+}
+.bibblio_container a {
+  text-decoration: none;
+}
+.bibblio_container .title {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.bibblio_container .form {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.bibblio_container .form_label {
+  width: 100%;
+}
+.bibblio_container .form_input {
+  width: 100%;
+  margin: 0px;
+  margin-bottom: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.bibblio_container .form_submit {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #24aae1;
+  border: 0px;
+  float: right;
+  font-size: 20px;
+  transition: 0.5s all;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.bibblio_container .form_submit:hover {
+  background-color: rgba(36,170,225,0.5);
+  color: #fff;
+  cursor: pointer;
+}
+.bibblio_container .form input[value="Cancel"] {
+  margin-left: 20px;
+  background-color: #d3d3d3;
+  transition: 0.5s all;
+}
+.bibblio_container .form input[value="Cancel"]:hover {
+  background-color: rgba(211,211,211,0.5);
+  color: #fff;
+  cursor: pointer;
+}
+.bibblio_container .form_noAccount,
+.bibblio_container .form_signUp {
+  width: 50%;
+  float: left;
+  text-align: center;
+  padding: 10px 20px;
+}
+.bibblio_container .form_signUp {
+  color: #fff;
+  background-color: #000;
+}
+.bibblio_container input[type=checkbox] {
+  visibility: hidden;
+}
+.bibblio_container .checkbox {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  float: left;
+}
+.bibblio_container .checkbox:before {
+  content: 'ON';
+  position: absolute;
+  left: -36px;
+  top: 0px;
+}
+.bibblio_container .checkbox:after {
+  content: 'OFF';
+  position: absolute;
+  right: -36px;
+  top: 0px;
+}
+.bibblio_container .checkbox_four {
+  width: 40px;
+  height: 40px;
+  background: #ddd;
+  margin: 20px 90px;
+  border-radius: 100%;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+}
+.bibblio_container .checkbox_four span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 1;
+  background: #333;
+  box-shadow: inset 0px 1px 3px rgba(0,0,0,0.5);
+}
+.bibblio_container .checkbox_flat-rounded {
+  width: 60px;
+  height: 20px;
+  margin: 10px 50px;
+}
+@media screen and (max-width: 480px) {
+  .bibblio_container .checkbox_flat-rounded {
+	float: none;
+	margin: 0 auto;
+  }
+}
+.bibblio_container .checkbox_flat-rounded div {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #000;
+  border-radius: 50px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.bibblio_container .checkbox_flat-rounded span {
+  display: block;
+  width: 25px;
+  height: 12px;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 4px;
+  z-index: 1;
+  left: 52%;
+  background: #d3d3d3;
+}
+.bibblio_container .checkbox_flat-rounded input[type=checkbox]:checked ~ span {
+  left: 5px;
+  background: #24aae1;
+}
+.bibblio_container .tab {
+  overflow: hidden;
+  margin-bottom: 0px;
+}
+.bibblio_container .tab_item {
+  width: 33.33%;
+  float: left;
+  text-align: center;
+  list-style: none;
+  color: #d3d3d3;
+  transition: 0.5s all;
+  font-size: 25px;
+  line-height: 2;
+  box-shadow: 0px 0px 0px !important;
+}
+@media screen and (max-width: 768px) {
+  .bibblio_container .tab_item {
+	font-size: 15px;
+  }
+}
+.bibblio_container .tab_item_active {
+  color: #24aae1;
+}
+.bibblio_container .tab_wizard {
+  margin-bottom: 50px;
+}
+.bibblio_container .tab_admin {
+  background-color: rgba(0,0,0,0.15);
+  margin-bottom: 50px;
+}
+.bibblio_container .tab_admin_item {
+  width: 25%;
+  cursor: pointer;
+  padding: 20px;
+  color: #000;
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 480px) {
+  .bibblio_container .tab_admin_item {
+	padding: 20px 0px;
+  }
+}
+.bibblio_container .tab_admin .tab_item_active {
+  color: #000;
+  background-color: #fff;
+}
+.bibblio_container .tab_admin_shortcode {
+  background: none;
+  color: #f00;
+  text-decoration: underline;
+  border: 0px;
+  margin-top: 10px;
+  display: none;
+}
+.bibblio_container .tab_admin_shortcode_pre {
+  color: #000;
+  display: none;
+  background-color: rgba(0,0,0,0.15);
+  margin-top: 20px;
+  padding: 20px;
+}
+.bibblio_container .tab_admin_addMyPrevPosts {
+  border-bottom: 2px solid rgba(0,0,0,0.15);
+  padding-bottom: 20px;
+}
+.bibblio_container .tab_admin_addMyPrevPosts_button {
+  padding: 10px 20px;
+  display: block;
+  float: left;
+  font-size: 16px;
+  transition: 0.5s all;
+  background-color: #24aae1;
+  color: #fff;
+  margin-top: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+@media screen and (max-width: 480px) {
+  .bibblio_container .tab_admin_addMyPrevPosts_button {
+	float: none;
+	text-align: center;
+	clear: both;
+  }
+}
+.bibblio_container .tab_admin_addMyPrevPosts_button_disable {
+  pointer-events: none;
+  background-color: #d3d3d3;
+}
+.bibblio_container .tab_admin_addMyPrevPosts_button:hover {
+  background-color: rgba(36,170,225,0.5);
+  color: #fff;
+  cursor: pointer;
+}
+.bibblio_container .tab_admin_addMyPrevPosts_button_update {
+  margin-right: 0px;
+  margin-top: 20px;
+}
+.bibblio_container .tab_admin_addMyPrevPosts_button_modulesName {
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0px 0px 0px !important;
+  border: 0px !important;
+}
+.bibblio_container .tab_admin_addMyPrevPosts_button_delete {
+  background-color: #d3d3d3;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.bibblio_container .tab_admin_content {
+  padding: 20px;
+}
+@media screen and (max-width: 480px) {
+  .bibblio_container .tab_admin_content {
+	padding: 0px;
+  }
+}
+.bibblio_container .tab_admin_content .module_create {
+  padding-left: 0px;
+}
+@media screen and (max-width: 768px) {
+  .bibblio_container .tab_admin_content .module_create {
+	padding-left: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .bibblio_container .tab_admin_content .module_create {
+	padding: 0px;
+  }
+}
+.bibblio_container .tab_section {
+  margin: 25px 0px;
+  overflow: hidden;
+}
+.bibblio_container .tab_section:last-child {
+  margin-bottom: 50px;
+}
+.bibblio_container .tab_section_label {
+  float: left;
+  font-weight: bold;
+  width: calc(100% - 160px);
+  padding-top: 6px;
+}
+@media screen and (max-width: 480px) {
+  .bibblio_container .tab_section_label {
+	width: 100%;
+	float: none;
+	padding: 20px 0px;
+  }
+}
+.bibblio_container .tab_overview {
+  float: left;
+  width: 40%;
+  position: relative;
+  padding: 20px;
+}
+@media screen and (max-width: 768px) {
+  .bibblio_container .tab_overview {
+	width: 100%;
+	float: none;
+  }
+}
+.bibblio_container .tab_overview_title {
+  margin-bottom: 20px;
+}
+.bibblio_container .tab_overview_rec {
+  border-left: 1px solid rgba(0,0,0,0.15);
+  width: 60%;
+  padding-left: 50px;
+}
+@media screen and (max-width: 768px) {
+  .bibblio_container .tab_overview_rec {
+	width: 100%;
+	float: none;
+	border-left: 0px;
+	padding-left: 0px;
+  }
+}
+.bibblio_container .tab_overview_logout {
+  width: 100%;
+}
+.bibblio_container .tab_overview_logout form {
+  display: none;
+}
+.bibblio_container .tab_overview_logout_title {
+  cursor: pointer;
+  color: #f7941e;
+  text-decoration: underline;
+}
+.bibblio_container .module {
+  width: 60%;
+  float: left;
+  padding: 20px;
+}
+@media screen and (max-width: 768px) {
+  .bibblio_container .module {
+	width: 100%;
+	float: none;
+	border-left: 0px;
+  }
+}
+.bibblio_container .module_content {
+  border: 2px solid #000;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.bibblio_container .module_saved {
+  width: 40%;
+}
+@media screen and (max-width: 768px) {
+  .bibblio_container .module_saved {
+	width: 100%;
+	float: none;
+  }
+}
+.bibblio_container .module_create img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.bibblio_container .module_input {
+  width: 69%;
+  float: left;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  border: 2px solid #000;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.bibblio_container .module_form {
+  padding: 0px 20px;
+}
+.bibblio_container .module_succes {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .bibblio_container .module_succes {
+	width: 100%;
+  }
+}
+.bibblio_container .module_circle {
+  border: 3px solid #24aae1;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+  font-size: 60px;
+  margin: 0 auto;
+  color: #24aae1;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.bibblio_container .module_circle i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bibblio_container .module_circle_after {
+  margin-bottom: 20px;
+  color: #24aae1;
+  font-size: 20px;
+  display: block;
+  text-decoration: underline;
+}
+.bibblio_container .module_button_create {
+  width: 28%;
+  margin-left: 2%;
+  float: left;
+  border: 0px;
+  height: 39px;
+  line-height: 39px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+.bibblio_container .module_button_submit {
+  width: 100%;
+  margin-top: 20px;
+}
+.bibblio_container .module_list {
+  padding: 20px;
+  min-height: 350px;
+  max-height: 350px;
+  overflow-y: scroll;
+  width: calc(100% + 30px);
+}
+.bibblio_container .module_list li {
+  list-style: none;
+  position: relative;
+  margin-bottom: 10px;
+}
+.bibblio_container .module_list li span {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  right: 0px;
+  cursor: pointer;
+}
+.bibblio_container .module_list li span:after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background-color: #f00;
+  right: 10px;
+  top: 10px;
+  transform: rotate(45deg);
+}
+.bibblio_container .module_list li span:before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background-color: #f00;
+  right: 10px;
+  top: 10px;
+  transform: rotate(-45deg);
+}
+.bibblio_container .module_list li input {
+  width: calc(100% - 30px);
+  border: 0px;
+  background: none;
+  box-shadow: 0px 0px 0px;
+  pointer-events: none;
+  outline: none;
+}
+.bibblio_container .module_title {
+  margin-bottom: 20px;
+}
+.bibblio_container .module_title_big {
+  text-align: center;
+  font-size: 30px;
+}
+.bibblio_container .module_create .module-showcase-layout,
+.bibblio_container .module_create .module-showcase-ratio,
+.bibblio_container .module_create .module-showcase-effect {
+  width: 100% !important;
+}
+.bibblio_container .module_create .module-showcase-controls .module-showcase-control-title,
+.bibblio_container .module_create .module-showcase-controls .module-showcase-control-inner {
+  border-left: 0px;
+}
+.bibblio_container .myModules_item {
+  width: 24%;
+  margin: 20px 1%;
+  margin-left: 0px;
+  border: 2px solid #000;
+  float: left;
+  transition: 0.5s all;
+  cursor: pointer;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .bibblio_container .myModules_item {
+	width: 49%;
+  }
+}
+.bibblio_container .myModules_item:hover {
+  background-color: #24aae1;
+  border: 2px solid #24aae1;
+}
+.bibblio_container .myModules_item:hover span {
+  color: #fff;
+  background: #fff;
+  border: 1px solid #24aae1;
+}
+.bibblio_container .myModules_item:hover i {
+  color: #fff;
+}
+.bibblio_container .myModules_item:hover p {
+  color: #fff;
+}
+.bibblio_container .myModules_item:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+  border: 20px solid transparent;
+  border-top: 20px solid #24aae1;
+  opacity: 0;
+  transition: 0.9s all;
+  z-index: -1;
+}
+.bibblio_container .myModules_item:hover:before {
+  bottom: -40px;
+  opacity: 1;
+  z-index: 1;
+}
+.bibblio_container .myModules_item_text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.bibblio_container .myModules_item_type {
+  overflow: hidden;
+  width: 75%;
+  margin: 20px auto;
+}
+.bibblio_container .myModules_item_type_plus i {
+  font-size: 50px;
+  text-align: center;
+  margin: 5px auto;
+  display: block;
+}
+.bibblio_container .myModules_item_type_lead span {
+  float: left;
+  background: #24aae1;
+  border: 1px solid #fff;
+}
+.bibblio_container .myModules_item_type_end span {
+  float: left;
+  background: #24aae1;
+  border: 1px solid #fff;
+  width: 33.33%;
+}
+.bibblio_container .myModules_item_type_slide span {
+  background: #24aae1;
+  border: 1px solid #fff;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .bibblio_container .module-showcase-layout-box,
+  .bibblio_container .module-showcase-layout-grd,
+  .bibblio_container .module-showcase-layout-row,
+  .bibblio_container .module-showcase-layout-col {
+	width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .bibblio_container .module-showcase-layout-box,
+  .bibblio_container .module-showcase-layout-grd,
+  .bibblio_container .module-showcase-layout-row,
+  .bibblio_container .module-showcase-layout-col {
+	width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .bibblio_container .module-showcase-layout-box,
+  .bibblio_container .module-showcase-layout-grd,
+  .bibblio_container .module-showcase-layout-row,
+  .bibblio_container .module-showcase-layout-col {
+	border-right: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .bibblio_container .values-container.values-recommendations {
+	padding-left: 0px;
+	padding-right: 10px;
+  }
+}
+.widget_bibblio_recent_posts ul li {
+  border: 0px;
+}
+.widget_bibblio_recent_posts ul li + li {
+  margin-top: 0px;
+}
+.single_post_error {
+  color: #ef5350;
+  font-style: italic;
+  font-size: 13px;
+}
+/*# sourceMappingURL=bibblio_related_posts-admin.css.map */

@@ -1,0 +1,534 @@
+$blue = #24AAE1;
+
+$tablet = 'screen and (max-width: 768px)';
+$phone = 'screen and (max-width: 480px)';
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+.container.bibblio_container
+    max-width 980px
+    width 100%
+    padding 20px
+    margin-top 20px
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+.bibblio_container
+    font-family "Open Sans"
+    *
+        padding 0px
+        margin 0px
+        box-sizing border-box
+    .successMessage
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        text-align: center;
+        padding: 40px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        color: #3c763d;
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+     #tab4
+        position: relative;
+    .error
+        &_div
+            color: #EF5350
+    .buttonLogout
+        padding: 14px 20px;
+        color: #fff;
+        background-color: #F7941E ;
+        border: 0px;
+        float: right;
+        font-size: 20px;
+        transition: 0.5s all;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        margin: 1px;
+        margin-left 20px
+        &:hover
+            background-color: rgba(#F7941E , 0.5);
+            color: white;
+            cursor pointer
+        @media $phone
+            margin-bottom 20px
+    .clear
+        clear both
+        overflow hidden
+
+    a
+        text-decoration none
+    .title
+        font-size 30px
+        text-align center
+        text-transform uppercase
+    .form
+        overflow hidden
+        margin-bottom 20px
+        &_label
+            width 100%
+        &_input
+            width 100%
+            margin 0px
+            margin-bottom 20px
+            padding 10px
+            margin-top 10px
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        &_submit
+            padding: 10px 20px;
+            color: white;
+            background-color: $blue;
+            border: 0px;
+            float: right;
+            font-size 20px
+            transition 0.5s all
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            &:hover
+                background-color: rgba($blue, 0.5);
+                color: white;
+                cursor pointer
+        input[value="Cancel"]
+            margin-left 20px
+            background-color #d3d3d3
+            transition 0.5s all
+            &:hover
+                background-color: rgba(#d3d3d3, 0.5);
+                color: white;
+                cursor pointer
+        &_noAccount,
+        &_signUp
+            width 50%
+            float left
+            text-align center
+            padding 10px 20px
+        &_signUp
+            color white
+            background-color black
+
+    input[type=checkbox]
+        visibility: hidden;
+    .checkbox
+        position: relative;
+        display: block
+        cursor: pointer
+        float left
+        &:before
+            content 'ON'
+            position absolute
+            left: -36px;
+            top: 0px;
+        &:after
+            content 'OFF'
+            position absolute
+            right: -36px;
+            top: 0px;
+        &_four
+            width: 40px;
+            height: 40px;
+            background: #ddd;
+            margin: 20px 90px;
+            border-radius: 100%;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+            span
+                display: block;
+                width: 30px;
+                height: 30px;
+                border-radius: 100px;
+                transition: all .5s ease;
+                cursor: pointer;
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                z-index: 1;
+                background: #333;
+                box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.5);
+    .checkbox_flat-rounded
+        width: 60px;
+        height: 20px;
+        margin: 10px 50px;
+        @media $phone
+            float none
+            margin 0 auto
+        div
+            width: 100%;
+            height: 100%;
+            border 2px solid black
+            border-radius: 50px;
+            position: absolute;
+            top: 0px;
+            left 0px
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        span
+            display: block;
+            width: 25px;
+            height: 12px;
+            border-radius: 50px;
+            transition: all .5s ease;
+            cursor: pointer;
+            position: absolute;
+            top: 4px;
+            z-index: 1;
+            left: 52%;
+            background: #d3d3d3;
+    .checkbox_flat-rounded input[type=checkbox]:checked ~ span
+        left: 5px;
+        background: $blue;
+    .tab
+        overflow hidden
+        margin-bottom 0px
+        &_item
+            width 33.33%
+            float: left
+            text-align center
+            list-style none
+            color: #d3d3d3
+            transition 0.5s all
+            font-size 25px
+            line-height 2
+            box-shadow 0px 0px 0px !important
+            @media $tablet
+                font-size 15px
+            &_active
+                color: $blue
+        &_wizard
+            margin-bottom 50px
+        &_admin
+            background-color: rgba(0, 0, 0, 0.15);
+            margin-bottom 50px
+            &_item
+                width 25%
+                cursor pointer
+                padding: 20px;
+                color: black;
+                margin-bottom 0px
+                @media $phone
+                    padding 20px 0px
+            .tab_item_active
+                color: black;
+                background-color white
+            &_shortcode
+                background none
+                color red
+                text-decoration underline
+                border 0px
+                margin-top 10px
+                display none
+                &_pre
+                    color: #000
+                    display none
+                    background-color: rgba(0, 0, 0, 0.15);
+                    margin-top: 20px;
+                    padding: 20px;
+            &_addMyPrevPosts
+                border-bottom 2px solid rgba(0, 0, 0, 0.15);
+                padding-bottom 20px
+                &_button
+                    padding 10px 20px;
+                    display block
+                    float left
+                    font-size: 16px;
+                    transition 0.5s all
+                    background-color $blue
+                    color white
+                    margin-top 10px
+                    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+                    @media $phone
+                        float none
+                        text-align center
+                        clear both
+                    &_disable
+                        pointer-events none
+                        background-color: #d3d3d3;
+                    &:hover
+                        background-color: rgba($blue, 0.5);
+                        color: white;
+                        cursor pointer
+                    &_update
+                        margin-right 0px
+                        margin-top 20px
+                    &_modulesName
+                        width 100%
+                        padding 10px
+                        box-shadow 0px 0px 0px !important
+                        border 0px !important
+                    &_delete
+                        background-color #d3d3d3
+                        margin-top 20px
+                        margin-left 20px
+            &_content
+                padding 20px
+                @media $phone
+                    padding: 0px
+                .module_create
+                    padding-left 0px
+                    @media $tablet
+                        padding-left 20px
+                    @media $phone
+                        padding 0px
+        &_section
+            margin 25px 0px
+            overflow hidden
+            &:last-child
+                margin-bottom 50px
+            &_label
+                float: left;
+                font-weight bold
+                width: calc(100% - 160px)
+                padding-top 6px
+                @media $phone
+                    width 100%
+                    float none
+                    padding 20px 0px
+        &_overview
+            float left
+            width 40%
+            position relative
+            padding 20px
+            @media $tablet
+                width 100%
+                float none
+            &_title
+                margin-bottom 20px
+            &_rec
+                border-left 1px solid rgba(0, 0, 0, 0.15);
+                width 60%
+                padding-left 50px
+                @media $tablet
+                    width 100%
+                    float none
+                    border-left 0px
+                    padding-left 0px
+            &_logout
+                width 100%
+                form
+                    display: none
+                &_title
+                    cursor: pointer;
+                    color #F7941E;
+                    text-decoration underline
+    .module
+        width 60%
+        float left
+        padding 20px
+        @media $tablet
+            width 100%
+            float none
+            border-left 0px
+        &_content
+            border 2px solid black
+            overflow hidden
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        &_saved
+            width 40%
+            @media $tablet
+                width 100%
+                float none
+        &_create
+            img
+                width 100%
+                margin-bottom 20px
+        &_input
+            width: 69%;
+            float: left
+            margin-bottom 0px
+            margin-top 0px
+            border: 2px solid black;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        &_form
+            padding 0px 20px
+        &_succes
+            float left
+            width 50%
+            text-align center
+            @media $phone
+                width 100%
+        &_circle
+            border 3px solid $blue
+            width 150px
+            height 150px
+            line-height 150px
+            text-align center
+            font-size 60px
+            margin 0 auto
+            color $blue
+            border-radius 50%
+            margin-bottom 20px
+            position relative
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            i
+                position absolute
+                top 50%
+                left 50%
+                transform translate(-50%, -50%)
+            &_after
+                margin-bottom 20px
+                color $blue
+                font-size 20px
+                display block
+                text-decoration underline
+        &_button
+            &_create
+                width 28%
+                margin-left 2%
+                float left
+                border: 0px
+                height: 39px
+                line-height 39px
+                background-color #000
+                color: white
+                text-align center
+            &_submit
+                width 100%
+                margin-top 20px
+        &_list
+            padding 20px
+            min-height 350px
+            max-height 350px
+            overflow-y scroll
+            width calc(100% + 30px)
+            li
+                list-style none
+                position relative
+                margin-bottom 10px
+                span
+                    position absolute
+                    width 30px
+                    height 20px
+                    right 0px
+                    cursor pointer
+                    &:after
+                        content ''
+                        position absolute
+                        width 15px
+                        height 2px
+                        background-color red
+                        right 10px
+                        top 10px
+                        transform rotate(45deg)
+                    &:before
+                        content ''
+                        position absolute
+                        width 15px
+                        height 2px
+                        background-color red
+                        right 10px
+                        top 10px
+                        transform rotate(-45deg)
+                input
+                    width calc(100% - 30px)
+                    border 0px
+                    background none
+                    box-shadow 0px 0px 0px
+                    pointer-events none
+                    outline none
+        &_title
+            margin-bottom 20px
+            &_big
+                text-align center
+                font-size 30px
+
+    .module_create
+        .module-showcase-layout,
+        .module-showcase-ratio,
+        .module-showcase-effect
+            width 100% !important
+        .module-showcase-controls .module-showcase-control-title,
+        .module-showcase-controls .module-showcase-control-inner
+            border-left 0px
+
+    .myModules
+        &_item
+            width 24%
+            margin 20px 1%
+            margin-left 0px
+            border 2px solid black
+            float left
+            transition 0.5s all
+            cursor pointer
+            position relative
+            @media $tablet
+                width 49%
+            &:hover
+                background-color $blue
+                border 2px solid $blue
+                span
+                    color white
+                    background white
+                    border 1px solid $blue
+                i
+                    color white
+                p
+                    color white
+            &:before
+                content ''
+                position absolute
+                left: 50%
+                transform translateX(-50%)
+                bottom -30px
+                border: 20px solid transparent;
+                border-top: 20px solid $blue;
+                opacity 0
+                transition 0.9s all
+                z-index -1
+            &:hover:before
+                bottom -40px
+                opacity 1
+                z-index 1
+            &_text
+                text-align center
+                margin-bottom 20px
+            &_type
+                overflow hidden
+                width 75%
+                margin 20px auto
+                &_plus
+                    i
+                        font-size 50px
+                        text-align center
+                        margin 5px auto
+                        display block
+                &_lead
+                    span
+                        float left
+                        background $blue
+                        border 1px solid white
+                &_end
+                    span
+                        float left
+                        background $blue
+                        border 1px solid white
+                        width 33.33%
+                &_slide
+                    span
+                        background $blue
+                        border 1px solid white
+                        display block
+    .module-showcase-layout-box,
+    .module-showcase-layout-grd,
+    .module-showcase-layout-row,
+    .module-showcase-layout-col
+        @media $tablet
+            width 50%
+        @media $phone
+            width 100%
+    .module-showcase-layout-box,
+    .module-showcase-layout-grd,
+    .module-showcase-layout-row,
+    .module-showcase-layout-col
+        @media $phone
+            border-right 0px
+    .values-container.values-recommendations
+        @media $phone
+            padding-left 0px
+            padding-right 10px
+.widget
+    &_bibblio_recent_posts
+        ul li
+           border 0px
+        ul li + li
+            margin-top 0px
+.single_post
+    &_error
+        color: #EF5350
+        font-style: italic
+        font-size 13px
