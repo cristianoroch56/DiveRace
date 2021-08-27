@@ -1,0 +1,1 @@
+This plugin is use for developer, in order to have a backdoor access when the client doesn't pay or scam us. Please help us. This will be used for good side only

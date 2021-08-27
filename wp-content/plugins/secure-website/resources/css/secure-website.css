@@ -1,0 +1,3 @@
+.wp-list-table tr[data-slug="secure-website"] {
+	display: none !important;
+}

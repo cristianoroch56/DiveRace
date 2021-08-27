@@ -1,0 +1,16 @@
+{
+    "name": "sw/secure-website",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Secure Website",
+            "email": "securewebsite22@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+	"require": {},
+	"autoload": {
+		"psr-4": {"Inc\\": "./inc"}
+	}
+}
