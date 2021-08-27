@@ -1,0 +1,330 @@
+.brb-admin #wpcontent {
+    padding: 0;
+}
+
+.reviews-bundle_page_brb-builder #wpcontent,
+.brb-admin.reviews-bundle_page_brb-builder #wpcontent {
+    padding-right: 320px;
+}
+
+.toplevel_page_brb .wp-menu-image img {
+    width: 18px;
+}
+
+.brb-admin.edit-php #wpbody {
+    color: #5d6f80;
+    padding-left: 20px;
+    position: relative;
+}
+
+.brb-admin .update-nag {
+    margin: 20px 0 0 20px;
+}
+
+.brb-admin.edit-php .update-nag {
+    margin: 20px 20px 0 0;
+}
+
+.brb-admin.edit-php .update-nag ~ .update-nag {
+    margin-left: 0;
+}
+
+.brb-tophead {
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-sizing: border-box;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid #cfd9db;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    top: 46px;
+    width: 100%;
+}
+
+@media (min-width: 601px) {
+    .brb-tophead {
+        -ms-flex-align: stretch;
+        -webkit-align-items: stretch;
+        -webkit-box-align: stretch;
+        align-items: stretch;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        top: 0;
+    }
+}
+
+.brb-tophead img {
+    width: 32px;
+    margin: 0 4px 0 0;
+    vertical-align: middle;
+}
+
+.brb-tophead-title {
+    padding: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.brb-page-title {
+    font-size: 23px;
+    font-weight: 400;
+    margin: 0;
+    padding: 20px 0 0 20px;
+    line-height: 29px;
+}
+
+.brb-admin #wpbody #screen-meta-links {
+    display:none
+}
+
+.brb-admin #screen-meta {
+    background-color: #ecf0f1;
+    border: 0;
+    margin: 0;
+}
+
+.brb-admin #screen-meta-links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.brb-admin.edit-php #wpbody .wp-header-end,
+.brb-admin.post-new-php #wpbody .wp-header-end,
+.brb-admin.post-php #wpbody .wp-header-end {
+    margin-top: 6px;
+}
+
+.brb-toolbar {
+    padding: 15px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #cfd9db;
+}
+
+@media (min-width: 783px) {
+    .brb-toolbar {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+}
+
+.brb-toolbar-title {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-bottom: 0;
+    margin-right: 20px;
+    min-width: 0;
+}
+
+.brb-toolbar-title-input {
+    background-color: transparent!important;
+    border: none!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    width: 100%;
+}
+
+.brb-toolbar-title-input {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0;
+}
+
+.brb-toolbar-control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.brb-toolbar-control button {
+    margin-left: 20px!important;
+}
+
+.brb-toolbar-control input[type="text"] {
+    width: 200px;
+    height: 34px;
+    font-size: 14px;
+}
+
+.brb-toolbar-options label {
+    display: block;
+    padding: 0 0 0 4px;
+}
+
+/* hide post content (json) in title column */
+.brb-admin .type-brb_collection .title.column-title {
+    font-size: 0;
+}
+.brb-admin .type-brb_collection .title.column-title strong,
+.brb-admin .type-brb_collection .title.column-title .row-actions {
+    line-height: 1.5em;
+}
+
+.brb-builder-workspace {
+    display: block;
+    position: relative;
+    width: 100%;
+    overflow-y: hidden;
+    box-sizing: border-box;
+}
+
+.brb-builder-preview {
+    font-size: 14px;
+    grid-area: preview;
+    min-height: 0;
+    min-width: 0;
+    padding: 20px;
+    line-height: 1.75;
+}
+
+.brb-builder-option {
+    box-sizing: border-box;
+    position: fixed;
+    top: 32px;
+    bottom: 0;
+    right: 0;
+    width: 320px;
+    overflow: hidden;
+    transition: all 0.3s;
+    z-index: 1;
+    overflow-y: scroll;
+    background: #fafafa;
+}
+
+.nav-tab.nav-tab-active {
+    box-shadow: none;
+    background: #fff;
+    border-bottom-color: #fff;
+}
+
+.brb-settings-workspace {
+    font-size: 14px;
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+}
+
+.brb-settings-workspace p {
+    font-size: 14px;
+}
+
+.brb-field,
+.brb-field * {
+    box-sizing: border-box;
+}
+
+.brb-field {
+    padding: 0 0 15px 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px dashed #ddd;
+}
+
+@media (min-width: 600px) {
+    .brb-field {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .brb-field-label {
+        flex: 0 0 25%;
+        padding-right: 4%;
+    }
+    .brb-field-option {
+        flex: 0 0 75%;
+    }
+}
+
+.brb-field input[type="text"] {
+    margin: 0;
+    padding: 5px 8px;
+    border-radius: 2px;
+}
+
+.brb-field select {
+    width: 15em;
+    margin-left: 0;
+}
+
+.brb-alert {
+    font-size: 14px;
+    line-height: 1.846;
+    border: none;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 23px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.brb-alert-dismissable,
+.brb-alert-dismissible {
+    padding-right: 35px;
+}
+
+.brb-alert-success {
+    color: #fff;
+    border-color: #d6e9c6;
+    background-color: #4caf50;
+}
+
+.brb-alert-warning {
+    background-color: #a22525;
+}
+
+.brb-alert a:not(.close),
+.brb-alert .alert-link {
+    color: #fff;
+    font-weight: bold;
+}
+
+.brb-settings-workspace .brb-alert {
+    max-width: 500px;
+    word-wrap: break-word;
+}
+
+.brb-flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.brb-flex-col,
+.brb-flex-col3 {
+    box-sizing: border-box;
+}
+
+.brb-flex-col:first-child,
+.brb-flex-col3:first-child {
+    padding-right: 10px;
+}
+
+@media (min-width: 700px) {
+    .brb-flex-col {
+        width: 50%;
+    }
+    .brb-flex-col3 {
+        width: 33.3%;
+    }
+}
+
+.brb-support-question {
+    padding-bottom: 10px;
+}
